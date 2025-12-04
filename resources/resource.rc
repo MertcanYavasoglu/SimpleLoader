@@ -1,0 +1,27 @@
+#include "../include/resource.h"
+
+IDI_ICON1 ICON "vpn-icon.ico"
+
+1 VERSIONINFO
+FILEVERSION     4,3,7,0
+PRODUCTVERSION  4,3,7,0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    BEGIN
+      VALUE "CompanyName",      "Proton AG"
+      VALUE "FileDescription",  "ProtonVPN Installer"
+      VALUE "FileVersion",      "4.3.7.0"
+      VALUE "InternalName",     "ProtonVPN_Setup"
+      VALUE "LegalCopyright",   "© 2025 Proton AG. All rights reserved."
+      VALUE "OriginalFilename", "ProtonVPN_v4.3.7_Setup.exe"
+      VALUE "ProductName",      "Proton VPN"
+      VALUE "ProductVersion",   "4.3.7.0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1252
+  END
+END

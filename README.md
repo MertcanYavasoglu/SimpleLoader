@@ -19,11 +19,18 @@ python3 encryptor.py -f calc.bin -a xor -k random -o csharp
 ```
 
 The XOR-encrypted shellcode in the most recently generated calc.bin file and the random key used in the XOR operation are written to the relevant section in src/injection.cpp.
-
-<img width="813" height="99" alt="image" src="https://github.com/user-attachments/assets/01c1767d-1040-426c-88fb-ec12ff213ff8" />
-
-<img width="781" height="100" alt="image" src="https://github.com/user-attachments/assets/4c7bdc30-fe85-4224-aabb-f0f108646069" />
-
+```bash
+python3 sh_generator.py -f calc.bin -a xor -k random -o csharp
+63 instructions encoded.
+Payload size: 169 bytes.
+[+] Successfully wrote raw shellcode to calc.bin
+```
+```bash
+python3 encryptor.py -f calc.bin -a xor -k random -o csharp
+[*] Shellcode input length: 169
+[+] Encrypted CSharp shellcode has been copied to Clipboard!
+[+] XOR Encryption KEY: LFX1YZ1XF9R3YOGC
+```
 Compilation with Visual Studio x64 Native Tools Command Prompt, cl.exe:
 
 ```DOS
